@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello Tusgavo"}
+    return {"status": "Builded on Render"}
 
 
 @app.get("/items/{item_id}")
