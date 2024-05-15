@@ -1,3 +1,18 @@
 {
-    "editor.defaultFoldingRangeProvider": "ms-python.black-formatter"
+    "editor.rulers": [88],
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "explicit",
+          "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.defaultFoldingRangeProvider": "ms-python.black-formatter"
+      },
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+    "workbench.colorTheme": "GitHub Dark",
 }
