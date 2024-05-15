@@ -1,8 +1,15 @@
+from typing import Optional
+
 from fastapi import FastAPI
 
 app = FastAPI()
 
 
-@app.get("/", tags=["Root"])
-def hello():
-    return {"Hello!": "We're working to deploy."}
+@app.get("/")
+async def root():
+    return {"message": "Hello Tusgavo"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Optional[str] = None):
+    return {"item_id": item_id, "q": q}
