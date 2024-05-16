@@ -1,0 +1,7 @@
+site_name: TeIA
+repo_url: https://github.com/gmsarti/teia_conhecimento
+repo_name: gmsarti/teia_conhecimento
+edit_uri: tree/main/docs
+
+theme:
+  name: material
