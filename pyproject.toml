@@ -10,6 +10,8 @@ python = "^3.11"
 fastapi = {extras = ["all"], version = "^0.111.0"}
 fastapi-socketio = "^0.0.10"
 editorconfig = "^0.12.4"
+sqlalchemy = "^2.0.30"
+psycopg2-binary = "^2.9.9"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.4.4"
@@ -41,4 +43,4 @@ run = 'fastapi dev fast_zero/app.py'
 pre_test = 'task lint'
 test = 'pytest -s -x --cov=fast_zero -vv'
 post_test = 'coverage html'
-up_local_ws = 'uvicorn app.controllers.api.v1.root:app --reload'
+dev = 'uvicorn app.controllers.api.v1.root:app --reload'
