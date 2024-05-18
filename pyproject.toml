@@ -12,6 +12,7 @@ fastapi-socketio = "^0.0.10"
 editorconfig = "^0.12.4"
 sqlalchemy = "^2.0.30"
 psycopg2-binary = "^2.9.9"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.4.4"
