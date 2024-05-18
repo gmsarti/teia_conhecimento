@@ -2,6 +2,7 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
+from app.infra.database import query
 from paths import TEMPLATES
 
 app = FastAPI()
@@ -18,6 +19,8 @@ def get_status():
     # Add logic to check your application's health, e.g., database connection
     is_database_connected = True  # Replace with your actual check
     status = "ok" if is_database_connected else "database_error"
+
+    query("SELECT 1 + 1 AS result;")
 
     s = {
         "status": status,
