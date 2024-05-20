@@ -3,7 +3,8 @@ import os
 from dotenv import load_dotenv
 from sqlalchemy import create_engine, text
 
-load_dotenv()
+env = os.environ.get("ENVIRONMENT", "development")  # Get the environment
+load_dotenv(f".env.{env}")
 
 
 def query(qry: str):
