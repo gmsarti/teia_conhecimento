@@ -21,14 +21,14 @@ def database_url() -> str:
         # "postgresql+psycopg2://postgres:local_password@localhost:5432/postgres"
         f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
     )
-
+    print(f"CONNECTION URL: {url}")
     return url
 
 
 def query(qry: str):
-    engine = create_engine(database_url())
 
     try:
+        engine = create_engine(database_url())
         with engine.connect() as connection:
             exec = connection.execute(text(qry))
             result = exec.fetchall()
