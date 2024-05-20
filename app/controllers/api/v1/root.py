@@ -17,7 +17,7 @@ async def root(request: Request):  # Added request argument
 
 
 @app.get(
-    "/status",
+    "/api/v1/status",
     summary="Get API status",
     response_description="API health and status details",
 )
