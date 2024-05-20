@@ -1,4 +1,6 @@
-from fastapi import FastAPI, Request
+from datetime import datetime
+
+from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
@@ -14,18 +16,45 @@ async def root(request: Request):  # Added request argument
     return templates.TemplateResponse("under_construction.html", {"request": request})
 
 
-@app.get("/status")
+@app.get(
+    "/status",
+    summary="Get API status",
+    response_description="API health and status details",
+)
 def get_status():
-    # Add logic to check your application's health, e.g., database connection
-    is_database_connected = True  # Replace with your actual check
-    status = "ok" if is_database_connected else "database_error"
+    """
+    Checks and returns the current status and health information of the API.
+    """
 
-    query("SELECT 1 + 1 AS result;")
+    # 1. Database Connection Check (More Robust)
+    try:
+        # Replace with your actual database connection and a simple query (e.g., SELECT 1)
+        database_status = "connected"
+    except Exception as e:  # Catch any database-related exceptions
+        database_status = "connection error"
+        print(f"Database error: {e}")  # Log the error for debugging
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,  # 503 for database issue
+            detail="Database connection error",
+        )
 
     s = {
-        "status": status,
-        "database": "connected" if is_database_connected else "not connected",
-        "version": "1.0.0",  # Your API version
+        "updated_at": datetime.now(),
+        "status": "ok" if database_status == "connected" else "error",
+        "database": database_status,
+        "version": "0.1.0",  # Your API version
+        "dependencies": {
+            "database": {
+                "version": query("SHOW server_version;")[0][0],
+                "max_connections": int(query("SHOW max_connections;")[0][0]),
+                "opened_connections": int(
+                    query(
+                        "SELECT COUNT(*) FROM pg_stat_activity WHERE datname = 'local_db';"
+                    )[0][0]
+                ),
+            }
+        },
         # Add more status information as needed
     }
+
     return s

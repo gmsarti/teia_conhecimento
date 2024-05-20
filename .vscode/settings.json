@@ -4,5 +4,8 @@
     ],
     "[python]": {
         "editor.formatOnSave": true
-    }
+    },
+    "python.testing.pytestArgs": [
+        "--watch"
+    ]
 }
