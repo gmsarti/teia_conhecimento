@@ -12,6 +12,11 @@ templates = Jinja2Templates(directory=TEMPLATES)  # Updated directory
 
 
 @app.get("/", response_class=HTMLResponse)
+async def root(request: Request):
+    return templates.TemplateResponse("landing_page.html", {"request": request})
+
+
+@app.get("/under-construction", response_class=HTMLResponse)
 async def root(request: Request):  # Added request argument
     return templates.TemplateResponse("under_construction.html", {"request": request})
 
