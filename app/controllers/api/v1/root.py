@@ -71,13 +71,6 @@ async def ask_question_form(request: Request):
     return templates.TemplateResponse("ask.html", {"request": request})
 
 
-# @app.post("/ask")
-# async def ask_question(question: Question):
-# chain = create_chain()  # Create the chain
-# result = chain.invoke({"input": question.question})  # Invoke the chain
-# return {"answer": result}  # Return the answer text
-
-
 @app.post("/ask", response_class=JSONResponse)
 async def ask_question(request: Request):
     try:
