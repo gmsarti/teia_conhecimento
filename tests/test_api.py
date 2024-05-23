@@ -48,23 +48,27 @@ def test_get_status_success(client):
     assert datetime.now() - updated_at < timedelta(minutes=1)
 
 
-# def test_ask_question_valid_input(client: TestClient):
-#     """Test the /ask endpoint with a valid question."""
+def test_ask_question_valid_input(client: TestClient):
+    """Test the /ask endpoint with a valid question."""
 
-#     question_data = {"question": "Qual é a capital do Brasil?"}
-#     response = client.post("/ask", json=question_data)
+    question_data = {"question": "Qual é a capital do Brasil?"}
+    response = client.post("/ask", json=question_data)
 
-#     assert response.status_code == 200
-#     assert "answer" in response.json()
-#     assert response.json()["answer"].startswith("A capital do Brasil é Brasília.")
+    print(f"\nResponse: {response.json()}\n")
+
+    assert response.status_code == 200
+    assert "answer" in response.json()
+    # assert response.json()["answer"].startswith("A capital do Brasil é Brasília.")
 
 
-# def test_ask_question_invalid_input(client: TestClient):
-#     """Test the /ask endpoint with an invalid question."""
+def test_ask_question_invalid_input(client: TestClient):
+    """Test the /ask endpoint with an invalid question."""
 
-#     invalid_data = {"questao": "Qual é a capital do Brasil?"}  # Incorrect field name
-#     response = client.post("/ask", json=invalid_data)
+    invalid_data = {"questao": "Qual é a capital do Brasil?"}  # Incorrect field name
+    response = client.post("/ask", json=invalid_data)
 
-#     assert response.status_code == 422
-#     assert "detail" in response.json()
-#     assert response.json()["detail"][0]["msg"] == "field required"
+    print(f"\nResponse: {response.json()}\n")
+
+    assert response.status_code == 422
+    assert "detail" in response.json()
+    assert response.json()["detail"][0]["msg"] == "Field required"
