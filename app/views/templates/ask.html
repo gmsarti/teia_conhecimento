@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask a Question</title>
+</head>
+<body>
+    <h1>Ask a Question</h1>
+
+    <form id="questionForm" method="POST">  
+        <input type="text" id="questionInput" name="question" placeholder="Enter your question">
+        <button type="submit">Ask</button>
+    </form>
+    <div id="answer"></div>
+    
+    <script>
+        const form = document.getElementById("questionForm");
+        console.log(form);
+        const answerDiv = document.getElementById("answer");
+        console.log(answerDiv);
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const question = document.getElementById("questionInput").value;
+            console.log(question);
+            const response = await fetch("/ask", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ question }),
+            });
+            console.log(response);
+
+            if (response.ok) {
+                const data = await response.json();
+                answerDiv.textContent = data.answer;
+            } else {
+                answerDiv.textContent = "Error: " + response.status;
+            }
+        });
+    </script>
+</body>
+</html>
+

@@ -82,17 +82,9 @@ async def ask_question_form(request: Request):
 async def ask_question(request: Request):
     try:
         form_data = await request.json()
-        print(f"Received form data: {form_data}")  # Log form data
-
         question_obj = Question(question=form_data["question"])
-        print(f"Question object: {question_obj}")  # Log question object
-
         chain = create_chain()
-        print(f"Chain created: {chain}")  # Log chain details
-
         result = chain.invoke({"input": question_obj.question})
-        print(f"Result from chain: {result}")  # Log chain result
-
         return {"answer": result}
     except ValueError as ve:
         print(f"Value Error: {ve}")
