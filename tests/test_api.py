@@ -23,7 +23,9 @@ def test_root_status_code_200(client):
 
 def test_root_under_construction(client):
     # client = TestClient(app)  # Create a test client
-    response = client.get("/")  # Simulate a GET request to the root path
+    response = client.get(
+        "/under-construction"
+    )  # Simulate a GET request to the root path
     assert (
         "<h2>Under Construction</h2>" in response.text
     )  # Check if specific content is present
@@ -31,7 +33,7 @@ def test_root_under_construction(client):
 
 def test_get_status_success(client):
     """Test that the /status endpoint returns a successful status."""
-    response = client.get("/status")
+    response = client.get("/api/v1/status")
     assert response.status_code == 200
     data = response.json()
     pprint(data)
@@ -44,3 +46,25 @@ def test_get_status_success(client):
     # Validate 'updated_at' timestamp is recent (within a minute)
     updated_at = datetime.fromisoformat(data["updated_at"].replace("Z", "+00:00"))
     assert datetime.now() - updated_at < timedelta(minutes=1)
+
+
+# def test_ask_question_valid_input(client: TestClient):
+#     """Test the /ask endpoint with a valid question."""
+
+#     question_data = {"question": "Qual é a capital do Brasil?"}
+#     response = client.post("/ask", json=question_data)
+
+#     assert response.status_code == 200
+#     assert "answer" in response.json()
+#     assert response.json()["answer"].startswith("A capital do Brasil é Brasília.")
+
+
+# def test_ask_question_invalid_input(client: TestClient):
+#     """Test the /ask endpoint with an invalid question."""
+
+#     invalid_data = {"questao": "Qual é a capital do Brasil?"}  # Incorrect field name
+#     response = client.post("/ask", json=invalid_data)
+
+#     assert response.status_code == 422
+#     assert "detail" in response.json()
+#     assert response.json()["detail"][0]["msg"] == "field required"
