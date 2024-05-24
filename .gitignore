@@ -87,3 +87,11 @@ ipython_config.py
 
 # Data Files (Large or sensitive, if needed)
 data/*
+
+
+# Node-specific
+node_modules/
+package-lock.json
+yarn.lock
+dist/
+.cache/
