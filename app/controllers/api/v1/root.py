@@ -2,6 +2,7 @@ from datetime import datetime
 
 from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.responses import HTMLResponse, JSONResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from app.infra.database import query
@@ -11,6 +12,9 @@ from paths import TEMPLATES
 
 app = FastAPI()
 templates = Jinja2Templates(directory=TEMPLATES)  # Updated directory
+app.mount(
+    "/static", StaticFiles(directory="app/views/static"), name="static"
+)  # Mount static directory
 
 
 @app.get("/", response_class=HTMLResponse)

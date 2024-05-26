@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeIA - Tecnologias de Ensino com Inteligência Artificial</title>
-    <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; }
-        .container { max-width: 960px; margin: 0 auto; padding: 20px; }
-        h1 { text-align: center; }
-        .description { margin-bottom: 20px; }
-        .bold-statement { font-size: 2em; text-align: center; margin-bottom: 20px; }
-        .cta { text-align: center; }
-        .button { display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; }
-        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 20px; }
-        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TeIA - Tecnologias de Ensino com Inteligência Artificial</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', path='css/output.css') }}"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1>TeIA Tecnologias de Ensino com Inteligência Artificial</h1>
 
-    <div class="container">
-        <h1>TeIA Tecnologias de Ensino com Inteligência Artificial</h1>
+            <p class="description">
+                TeIA é neste momento o embrião de uma startup cujo objetivo é
+                desenvolver software para uso na educação. Acreditamos que o uso
+                de inteligências artificiais relacionadas à linguagem podem
+                ajudar alunos de diversas idades a aprenderem o que precisam e
+                querem de forma mais eficiente e divertida e os professores
+                possam criar conteúdos mais interessantes de forma mais fácil.
+            </p>
 
-        <p class="description">
-            TeIA é neste momento o embrião de uma startup cujo objetivo é desenvolver software para uso na educação. 
-            Acreditamos que o uso de inteligências artificiais relacionadas à linguagem podem ajudar alunos de diversas 
-            idades a aprenderem o que precisam e querem de forma mais eficiente e divertida e os professores possam criar 
-            conteúdos mais interessantes de forma mais fácil.
-        </p>
+            <p class="bold-statement">Vamos conectar conhecimentos!</p>
 
-        <p class="bold-statement">Vamos conectar conhecimentos!</p>
+            <div class="cta">
+                <p>
+                    Estamos participando do ICL Tank, um projeto do Instituto
+                    Conhecimento Liberta. E precisamos do SEU VOTO!
+                </p>
+                <a
+                    href="https://icltank.com.br/teia-conhecimento/#vote"
+                    class="button"
+                    >VOTE AQUI</a
+                >
+            </div>
 
-        <div class="cta">
-            <p>Estamos participando do ICL Tank, um projeto do Instituto Conhecimento Liberta. E precisamos do SEU VOTO!</p>
-            <a href="https://icltank.com.br/teia-conhecimento/#vote" class="button">VOTE AQUI</a>
+            <div class="video-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/fpPvMsNC7u0?si=_C7GPDqw6WXDJLGh"
+                    frameborder="0"
+                    allowfullscreen
+                ></iframe>
+            </div>
         </div>
-
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fpPvMsNC7u0?si=_C7GPDqw6WXDJLGh" frameborder="0" allowfullscreen></iframe>
-        </div>
-
-    </div>
-</body>
+    </body>
 </html>

@@ -1,11 +1,39 @@
 {
     "editor.rulers": [
-        88
+      88
     ],
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
     "[python]": {
-        "editor.formatOnSave": true
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+      },
+      "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "python.testing.pytestArgs": [
-        "--watch"
-    ]
-}
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+      "notebook.source.fixAll": "explicit",
+      "notebook.source.organizeImports": "explicit"
+    },
+    "workbench.colorTheme": "GitHub Dark",
+    "editor.formatOnSave": true,
+    "editor.defaultFoldingRangeProvider": "charliermarsh.ruff",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "python.languageServer": "Pylance",
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "editor.minimap.enabled": false,
+    "[yaml]": {
+      "editor.tabSize": 2, // or 4, depending on your preference
+      "editor.insertSpaces": true  // Use spaces instead of tabs
+    }
+  }
