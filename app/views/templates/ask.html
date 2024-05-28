@@ -60,8 +60,8 @@
                 const question = questionInput.value.trim();
                 if (question !== "") {
                     appendMessage("user", question);
-                    questionInput.value = "";
-                    questionInput.style.height = "24px"; // Reset the height
+                    questionInput.value = ""; // Clear the input
+                    questionInput.style.height = "40px"; // Immediately reset height
 
                     const response = await fetch("/ask", {
                         method: "POST",
@@ -76,9 +76,8 @@
                         appendMessage("bot", "Error: " + response.status);
                     }
 
-                    // Reset textarea height
-                    questionInput.value = ""; // Clear content first
-                    questionInput.style.height = "24px";
+                    // Reset textarea height again after the response is appended
+                    questionInput.style.height = "40px";
                 }
             });
 
