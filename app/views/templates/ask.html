@@ -1,42 +1,105 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Ask a Question</title>
-</head>
-<body>
-    <h1>Ask a Question</h1>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ask a Question</title>
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', path='css/output.css') }}"
+        />
+    </head>
+    <body class="bg-gray-800 h-screen flex flex-col">
+        <header
+            class="bg-gray-900 text-gray-100 p-4 flex justify-between items-center"
+        >
+            <h1 class="text-2xl font-semibold">TeIA Chatbot</h1>
+        </header>
 
-    <form id="questionForm" method="POST">  
-        <input type="text" id="questionInput" name="question" placeholder="Enter your question">
-        <button type="submit">Ask</button>
-    </form>
-    <div id="answer"></div>
-    
-    <script>
-        const form = document.getElementById("questionForm");
-        console.log(form);
-        const answerDiv = document.getElementById("answer");
-        console.log(answerDiv);
+        <main class="flex-grow p-4 overflow-y-auto" id="chat-container"></main>
 
-        form.addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const question = document.getElementById("questionInput").value;
-            console.log(question);
-            const response = await fetch("/ask", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ question }),
+        <form
+            id="questionForm"
+            class="bg-gray-700 p-4 flex items-center sticky bottom-0"
+        >
+            <textarea
+                id="questionInput"
+                name="question"
+                placeholder="Type your message here..."
+                rows="1"
+                class="w-full rounded-l p-2 resize-none focus:outline-none text-black"
+            ></textarea>
+            <button
+                type="submit"
+                class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-r"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    />
+                </svg>
+            </button>
+        </form>
+
+        <script>
+            const form = document.getElementById("questionForm");
+            const chatContainer = document.getElementById("chat-container");
+            const questionInput = document.getElementById("questionInput");
+
+            form.addEventListener("submit", async (event) => {
+                event.preventDefault();
+                const question = questionInput.value.trim();
+                if (question !== "") {
+                    appendMessage("user", question);
+                    questionInput.value = ""; // Clear the input
+                    questionInput.style.height = "40px"; // Immediately reset height
+
+                    const response = await fetch("/ask", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ question }),
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        appendMessage("bot", data.answer);
+                    } else {
+                        appendMessage("bot", "Error: " + response.status);
+                    }
+
+                    // Reset textarea height again after the response is appended
+                    questionInput.style.height = "40px";
+                }
             });
-            console.log(response);
 
-            if (response.ok) {
-                const data = await response.json();
-                answerDiv.textContent = data.answer;
-            } else {
-                answerDiv.textContent = "Error: " + response.status;
+            function appendMessage(sender, message) {
+                const messageElement = document.createElement("div");
+                messageElement.classList.add("message", sender);
+                messageElement.textContent = message;
+                chatContainer.appendChild(messageElement);
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+
+                // Reset the height of the questionInput after the message has been added
+                questionInput.style.height = "24px";
             }
-        });
-    </script>
-</body>
-</html>
 
+            // Adjust textarea height dynamically
+            questionInput.addEventListener("input", () => {
+                questionInput.style.height = "24px"; // Set a minimum height of one line
+                questionInput.style.height = `${Math.max(
+                    questionInput.scrollHeight,
+                    24
+                )}px`; // Adjust height based on content, keeping minimum of 24px
+            });
+        </script>
+    </body>
+</html>

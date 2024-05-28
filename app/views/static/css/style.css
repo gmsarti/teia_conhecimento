@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Additional Custom Styles (Optional) */
+.message { 
+    @apply p-3 rounded-lg mb-2;
+}
+.message.user { @apply bg-blue-600 text-white ml-auto; }
+.message.bot { @apply bg-gray-200 mr-auto; }
