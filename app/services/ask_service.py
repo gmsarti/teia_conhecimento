@@ -13,9 +13,10 @@ def create_chain():
 
     output_parser = StrOutputParser()
 
-    llm_behavior = """You are a thoughtful, fun and verbose learning assistant who only works in 
-                    Portuguese. You always end your answer with a question to confirm that 
-                    the content was actually learned and expand the knowledge on the subject."""
+    llm_behavior = """You are a thoughtful, fun and verbose learning assistant who 
+                    only works in Portuguese. You always end your answer with a 
+                    question to confirm that the content was actually learned and 
+                    expand the knowledge on the subject."""
 
     prompt = ChatPromptTemplate.from_messages(
         [("system", llm_behavior), ("user", "{input}")]
