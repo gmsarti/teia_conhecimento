@@ -1,0 +1,244 @@
+{
+  "baralho_passaros_mata_atlantica": [
+    {
+      "nome": "Sabiá-laranjeira",
+      "caracteristica": "Conhecido por seu canto melodioso e pela cor laranja no peito",
+      "carta_taro": "A carta do Canto da Alma",
+      "significado": "Representa harmonia, expressão criativa e a capacidade de encontrar beleza em momentos difíceis"
+    },
+    {
+      "nome": "Bem-te-vi",
+      "caracteristica": "Famoso por seu canto característico que soa como seu nome",
+      "carta_taro": "A carta do Anúncio",
+      "significado": "Simboliza clareza, comunicação direta e a coragem de se fazer ouvir"
+    },
+    {
+      "nome": "Tucano-toco",
+      "caracteristica": "Reconhecido por seu bico grande e colorido",
+      "carta_taro": "A carta do Equilíbrio Exuberante",
+      "significado": "Representa abundância, equilíbrio entre o físico e o espiritual, e a importância da aparência"
+    },
+    {
+      "nome": "Gralha-azul",
+      "caracteristica": "Conhecida por sua plumagem azul brilhante e por plantar araucárias",
+      "carta_taro": "A carta do Plantador de Futuro",
+      "significado": "Simboliza previsão, planejamento a longo prazo e a importância de ações presentes para o futuro"
+    },
+    {
+      "nome": "Tiê-sangue",
+      "caracteristica": "Notável por sua cor vermelha intensa",
+      "carta_taro": "A carta da Paixão Ardente",
+      "significado": "Representa intensidade emocional, desejo e a coragem de mostrar seus verdadeiros sentimentos"
+    },
+    {
+      "nome": "Araponga",
+      "caracteristica": "Famoso por seu canto metálico e alto",
+      "carta_taro": "A carta do Chamado Ressonante",
+      "significado": "Simboliza a capacidade de fazer-se notado, persistência e a quebra de padrões"
+    },
+    {
+      "nome": "Beija-flor-tesoura",
+      "caracteristica": "Conhecido por sua cauda longa e bifurcada",
+      "carta_taro": "A carta da Precisão Graciosa",
+      "significado": "Representa agilidade, eficiência e a habilidade de encontrar doçura na vida"
+    },
+    {
+      "nome": "Juruviara",
+      "caracteristica": "Apreciado por seu canto variado e melodioso",
+      "carta_taro": "A carta da Melodia Variada",
+      "significado": "Simboliza adaptabilidade, versatilidade e a capacidade de harmonizar diferentes aspectos da vida"
+    },
+    {
+      "nome": "Pica-pau-de-banda-branca",
+      "caracteristica": "Reconhecido pelos padrões preto e branco e por sua habilidade de escalar árvores",
+      "carta_taro": "A carta do Ritmo Persistente",
+      "significado": "Representa determinação, trabalho constante e a habilidade de superar obstáculos"
+    },
+    {
+      "nome": "Saíra-sete-cores",
+      "caracteristica": "Admirado por suas cores vibrantes e variadas",
+      "carta_taro": "A carta do Espectro Completo",
+      "significado": "Simboliza diversidade, expressão pessoal e a celebração das diferenças"
+    },
+    {
+      "nome": "João-de-barro",
+      "caracteristica": "Famoso por construir ninhos de barro em forma de forno",
+      "carta_taro": "A carta do Construtor de Lar",
+      "significado": "Representa estabilidade, construção paciente e a importância de criar um espaço seguro"
+    },
+    {
+      "nome": "Tangará",
+      "caracteristica": "Conhecido por suas danças elaboradas durante o período de acasalamento",
+      "carta_taro": "A carta da Dança da Vida",
+      "significado": "Simboliza celebração, ritual e a importância de momentos de alegria"
+    },
+    {
+      "nome": "Araçari-banana",
+      "caracteristica": "Notável por seu bico serrilhado usado para comer frutas",
+      "carta_taro": "A carta do Saboreador",
+      "significado": "Representa apreciação, prazer nos detalhes e a importância de saborear a vida"
+    },
+    {
+      "nome": "Sanhaço-cinzento",
+      "caracteristica": "Comum em áreas urbanas, conhecido por sua plumagem azul-acinzentada",
+      "carta_taro": "A carta do Adaptador Urbano",
+      "significado": "Simboliza flexibilidade, resiliência e a capacidade de prosperar em novos ambientes"
+    },
+    {
+      "nome": "Jacutinga",
+      "caracteristica": "Uma ave ameaçada de extinção, conhecida por sua crista e barbela",
+      "carta_taro": "A carta do Tesouro Ameaçado",
+      "significado": "Representa valor intrínseco, a fragilidade da beleza e a necessidade de proteção"
+    },
+    {
+      "nome": "Surucuá-de-barriga-vermelha",
+      "caracteristica": "Apreciado por suas cores vivas e cauda longa",
+      "carta_taro": "A carta do Esplendor Oculto",
+      "significado": "Simboliza beleza interior, revelação gradual e a importância de olhar além das aparências"
+    },
+    {
+      "nome": "Macuco",
+      "caracteristica": "Uma ave terrestre grande, conhecida por seu canto baixo e profundo",
+      "carta_taro": "A carta do Caminhar Firme",
+      "significado": "Representa conexão com a terra, estabilidade e a força do silêncio"
+    },
+    {
+      "nome": "Pavó",
+      "caracteristica": "Famoso por seu canto que lembra um assobio melancólico",
+      "carta_taro": "A carta do Lamento Melodioso",
+      "significado": "Simboliza reflexão, introspecção e a beleza que pode surgir da melancolia"
+    },
+    {
+      "nome": "Sabiá-una",
+      "caracteristica": "Conhecido por sua plumagem totalmente preta e canto melodioso",
+      "carta_taro": "A carta do Cantor Sombrio",
+      "significado": "Representa profundidade emocional, transformação e a beleza oculta na escuridão"
+    },
+    {
+      "nome": "Pichochó",
+      "caracteristica": "Notável por seu canto forte e repetitivo",
+      "carta_taro": "A carta da Mensagem Repetida",
+      "significado": "Simboliza persistência, consistência e a importância de reforçar intenções"
+    },
+    {
+      "nome": "Tiriba-de-testa-vermelha",
+      "caracteristica": "Reconhecido pela mancha vermelha na testa",
+      "carta_taro": "A carta da Marca Distintiva",
+      "significado": "Representa individualidade, autoexpressão e o poder de se destacar"
+    },
+    {
+      "nome": "Saí-azul",
+      "caracteristica": "Admirado por sua plumagem azul brilhante",
+      "carta_taro": "A carta do Brilho Celeste",
+      "significado": "Simboliza inspiração, elevação espiritual e a busca pelo divino"
+    },
+    {
+      "nome": "Jacu",
+      "caracteristica": "Conhecido por seu papel na dispersão de sementes na floresta",
+      "carta_taro": "A carta do Semeador",
+      "significado": "Representa fertilidade, disseminação de ideias e a importância de espalhar positividade"
+    },
+    {
+      "nome": "Pipira-vermelha",
+      "caracteristica": "Notável por sua coloração vermelha intensa",
+      "carta_taro": "A carta da Chama Interior",
+      "significado": "Simboliza paixão, energia vital e a coragem de seguir os impulsos do coração"
+    },
+    {
+      "nome": "Periquito-rico",
+      "caracteristica": "Famoso por suas vocalizações altas e frequentes",
+      "carta_taro": "A carta do Falante Exuberante",
+      "significado": "Representa sociabilidade, expressão destemida e a alegria da comunicação"
+    },
+    {
+      "nome": "Tangará-dançador",
+      "caracteristica": "Conhecido por suas elaboradas danças de acasalamento",
+      "carta_taro": "A carta do Ritual de Cortejo",
+      "significado": "Simboliza atração, sedução e a importância dos rituais na vida"
+    },
+    {
+      "nome": "Pica-pau-anão-barrado",
+      "caracteristica": "Reconhecido por seu pequeno tamanho e padrão barrado",
+      "carta_taro": "A carta do Pequeno Persistente",
+      "significado": "Representa determinação, atenção aos detalhes e o poder dos pequenos esforços constantes"
+    },
+    {
+      "nome": "Saracura-três-potes",
+      "caracteristica": "Famosa por seu canto que lembra o som de \"três potes\" caindo",
+      "carta_taro": "A carta do Ritmo Tripartite",
+      "significado": "Simboliza equilíbrio, ciclos da vida e a importância de manter um ritmo constante"
+    },
+    {
+      "nome": "Tiê-preto",
+      "caracteristica": "Notável por sua plumagem preta brilhante",
+      "carta_taro": "A carta do Mistério Elegante",
+      "significado": "Representa sofisticação, introspecção e o poder do desconhecido"
+    },
+    {
+      "nome": "Rendeira",
+      "caracteristica": "Conhecida por seu canto melodioso e plumagem cinza e branca",
+      "carta_taro": "A carta do Tecelão de Melodias",
+      "significado": "Simboliza criatividade, harmonia e a capacidade de tecer belas experiências na vida"
+    },
+    {
+      "nome": "Pica-pau-rei",
+      "caracteristica": "O maior pica-pau da Mata Atlântica, com crista vermelha distintiva",
+      "carta_taro": "A carta da Nobreza Natural",
+      "significado": "Representa liderança, autoridade e a responsabilidade que vem com o poder"
+    },
+    {
+      "nome": "Arapaçu-verde",
+      "caracteristica": "Reconhecido por sua habilidade de escalar árvores em espiral",
+      "carta_taro": "A carta do Explorador Espiral",
+      "significado": "Simboliza progressão, crescimento pessoal e a jornada da vida"
+    },
+    {
+      "nome": "Gavião-pombo",
+      "caracteristica": "Um rapinante conhecido por caçar outras aves",
+      "carta_taro": "A carta do Caçador Perspicaz",
+      "significado": "Representa foco, determinação e a importância de perseguir objetivos com precisão"
+    },
+    {
+      "nome": "Sabiá-coleira",
+      "caracteristica": "Famoso por seu canto melodioso e colar preto distintivo",
+      "carta_taro": "A carta do Cantor Distinto",
+      "significado": "Simboliza individualidade, expressão única e a coragem de se destacar"
+    },
+    {
+      "nome": "Tiê-do-mato-grosso",
+      "caracteristica": "Notável por sua plumagem verde brilhante",
+      "carta_taro": "A carta do Esplendor Escondido",
+      "significado": "Representa beleza oculta, descobertas inesperadas e o valor do que está escondido"
+    },
+    {
+      "nome": "Choca-da-mata",
+      "caracteristica": "Conhecida por seu canto característico e hábito de forragear no sub-bosque",
+      "carta_taro": "A carta do Explorador do Submundo",
+      "significado": "Simboliza investigação, descobertas e a importância de explorar as profundezas"
+    },
+    {
+      "nome": "Papagaio-de-peito-roxo",
+      "caracteristica": "Uma espécie ameaçada, reconhecida pela mancha roxa no peito",
+      "carta_taro": "A carta do Orador Ameaçado",
+      "significado": "Representa expressão única, valor da diversidade e a necessidade de preservar o que é raro"
+    },
+    {
+      "nome": "Piolhinho",
+      "caracteristica": "Pequeno pássaro conhecido por seu canto agudo e repetitivo",
+      "carta_taro": "A carta da Voz Persistente",
+      "significado": "Simboliza perseverança, a força das pequenas ações e a importância de manter-se visível"
+    },
+    {
+      "nome": "Guaxe",
+      "caracteristica": "Famoso por seus ninhos em forma de bolsa pendurados em árvores",
+      "carta_taro": "A carta do Tecelão Social",
+      "significado": "Representa comunidade, cooperação e a importância de criar redes de apoio"
+    },
+    {
+      "nome": "Sabiá-cica",
+      "caracteristica": "Conhecido por seu canto melodioso e plumagem olivácea",
+      "carta_taro": "A carta do Cantor Camuflado",
+      "significado": "Simboliza talentos ocultos, modéstia e a beleza que pode ser encontrada na simplicidade"
+    }
+  ]
+}

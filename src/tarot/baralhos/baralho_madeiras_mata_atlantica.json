@@ -1,0 +1,88 @@
+{
+  "baralho_madeiras_mata_atlantica": [
+    {
+      "nome": "Jequitibá-rosa",
+      "caracteristicas_arvore": "Uma das maiores árvores da Mata Atlântica, podendo atingir 50 metros de altura e viver mais de 3.000 anos",
+      "caracteristicas_madeira": "Madeira moderadamente pesada, com boa resistência mecânica e durabilidade natural",
+      "carta_taro": "A Carta do Ancião Resiliente",
+      "significado": "Simboliza longevidade, força duradoura e a capacidade de resistir ao teste do tempo. Representa a sabedoria que vem com a idade e a importância de construir bases sólidas para o futuro"
+    },
+    {
+      "nome": "Pau-brasil",
+      "caracteristicas_arvore": "Árvore histórica que deu nome ao país, com tronco tortuoso e casca espinhosa",
+      "caracteristicas_madeira": "Madeira muito dura e pesada, com coloração avermelhada característica",
+      "carta_taro": "A Carta da Essência Nacional",
+      "significado": "Representa identidade, resistência e valor intrínseco. Simboliza a capacidade de manter-se firme diante de adversidades e a importância de honrar suas raízes"
+    },
+    {
+      "nome": "Ipê-amarelo",
+      "caracteristicas_arvore": "Conhecida por sua floração exuberante que cobre toda a copa com flores amarelas",
+      "caracteristicas_madeira": "Madeira muito pesada, dura e de alta resistência ao apodrecimento",
+      "carta_taro": "A Carta do Esplendor Dourado",
+      "significado": "Simboliza transformação, beleza efêmera e força duradoura. Representa a capacidade de florescer mesmo em condições adversas e a importância de celebrar os momentos de glória"
+    },
+    {
+      "nome": "Jacarandá-da-bahia",
+      "caracteristicas_arvore": "Árvore de grande porte com copa ampla e flores roxas vistosas",
+      "caracteristicas_madeira": "Madeira nobre, pesada, com coloração variando do marrom ao preto-violáceo",
+      "carta_taro": "A Carta da Nobreza Natural",
+      "significado": "Representa elegância, versatilidade e valor intrínseco. Simboliza a capacidade de adaptar-se mantendo a própria essência e a importância de reconhecer a beleza em todas as suas formas"
+    },
+    {
+      "nome": "Araucária",
+      "caracteristicas_arvore": "Conífera de forma cônica característica, símbolo da floresta de Araucária",
+      "caracteristicas_madeira": "Madeira leve a moderadamente pesada, de cor clara e grã direita",
+      "carta_taro": "A Carta do Guardião Perene",
+      "significado": "Simboliza resiliência, adaptação e preservação. Representa a capacidade de manter-se firme e crescer em direção às alturas, além da importância de proteger ecossistemas únicos"
+    },
+    {
+      "nome": "Cedro",
+      "caracteristicas_arvore": "Árvore de grande porte com folhagem densa e aromática",
+      "caracteristicas_madeira": "Madeira leve a moderadamente pesada, macia ao corte e resistente a insetos",
+      "carta_taro": "A Carta do Protetor Aromático",
+      "significado": "Representa proteção, cura e renovação. Simboliza a capacidade de afastar influências negativas e a importância de criar ambientes saudáveis e acolhedores"
+    },
+    {
+      "nome": "Imbuia",
+      "caracteristicas_arvore": "Árvore de crescimento lento, podendo viver mais de 500 anos",
+      "caracteristicas_madeira": "Madeira moderadamente pesada, muito durável e com belos veios",
+      "carta_taro": "A Carta do Tesouro Oculto",
+      "significado": "Simboliza paciência, valor interno e revelação gradual. Representa a importância do desenvolvimento lento e constante, e o reconhecimento da beleza que se revela com o tempo"
+    },
+    {
+      "nome": "Peroba-rosa",
+      "caracteristicas_arvore": "Árvore de grande porte com tronco reto e casca grossa",
+      "caracteristicas_madeira": "Madeira moderadamente pesada, de cor rosada e alta durabilidade",
+      "carta_taro": "A Carta da Força Graciosa",
+      "significado": "Representa equilíbrio entre força e beleza, estabilidade e flexibilidade. Simboliza a capacidade de manter-se firme enquanto se adapta às mudanças"
+    },
+    {
+      "nome": "Canela-preta",
+      "caracteristicas_arvore": "Árvore de crescimento rápido, importante na sucessão ecológica",
+      "caracteristicas_madeira": "Madeira moderadamente pesada, de cor marrom-escura e aromática",
+      "carta_taro": "A Carta do Pioneiro Aromático",
+      "significado": "Simboliza renovação, adaptabilidade e influência sutil. Representa a capacidade de preparar o caminho para outros e a importância de deixar uma marca positiva no ambiente"
+    },
+    {
+      "nome": "Guapuruvu",
+      "caracteristicas_arvore": "Árvore de crescimento muito rápido, com flores amarelas vistosas",
+      "caracteristicas_madeira": "Madeira muito leve, macia e de baixa durabilidade natural",
+      "carta_taro": "A Carta do Crescimento Veloz",
+      "significado": "Representa rápida expansão, oportunidade e transformação. Simboliza a capacidade de aproveitar momentos favoráveis para crescer, lembrando que nem tudo que cresce rápido é duradouro"
+    },
+    {
+      "nome": "Braúna",
+      "caracteristicas_arvore": "Árvore de pequeno porte, com tronco tortuoso e madeira muito densa",
+      "caracteristicas_madeira": "Madeira muito pesada, dura e de alta resistência mecânica",
+      "carta_taro": "A Carta da Resistência Compacta",
+      "significado": "Simboliza força interior, resistência e superação. Representa a capacidade de manter-se firme diante de pressões externas e a importância da resiliência em face de desafios"
+    },
+    {
+      "nome": "Guarantã",
+      "caracteristicas_arvore": "Árvore de médio porte, com tronco sulcado e copa densa",
+      "caracteristicas_madeira": "Madeira muito pesada, dura e altamente resistente à umidade",
+      "carta_taro": "A Carta do Guardião Inquebrável",
+      "significado": "Representa proteção, estabilidade e perseverança. Simboliza a capacidade de oferecer apoio confiável e a importância de manter-se firme em tempos turbulentos"
+    }
+  ]
+}
